@@ -1,4 +1,5 @@
-package pl.coderslab.charity.institution;
+package pl.coderslab.charity.category;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,11 +17,10 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "institution")
-public class Institution {
+@Table(name = "category")
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String description;
 }
